@@ -22,10 +22,14 @@ alias raw='cd assets/images/game/raw&&s'
 #Game Dev aliases
 alias audio='audiosprite -g 0 -o audio -e "ogg,m4a,wav" *.ogg'
 alias audioWAV='audiosprite -g 0 -o audio -e "ogg,m4a,wav" *.wav'
-alias work='cd /Users/benc/git/phaser_sandbox-benc1/Napoleon\ Bone\ Apart&&s'
+alias audioBG='audiosprite -g 0 -o bg_audio -e "ogg,m4a,wav" '
+
+alias work='cd /Users/benc/git/phaser_sandbox-benc1&&s'
 alias src='source .bash_profile'
-alias wrk='cd /Users/benc/phaser/new\ games'
+alias wrk='cd /Users/benc/git/phaser_sandbox-benc&&s'
 alias halp='vim phaser/Useful\ commands' 
+alias loader='rm index.html&&rm style.css&&rm sz.js&&cp /Users/benc/git/phaser_sandbox-benc1/Master\ Game\ Template/index.html .&&cp /Users/benc/git/phaser_sandbox-benc1/Master\ Game\ Template/style.css .&&cp /Users/benc/git/phaser_sandbox-benc1/Master\ Game\ Template/sz.js .'
+alias fixit='touch index.html&&touch sz.js&&touch style.css'
 
 #adds commits and pushes first parameter as commit message
 function cm() {
