@@ -1,0 +1,30 @@
+#Univeral use aliases
+alias brc='vim .bash_profile'
+alias l='pwd&&ls -la'
+alias s='ls&&pwd'
+alias ga='git add *'
+alias gp='git push origin master'
+alias b='cd ..'
+alias bb='cd ..&&cd ..&&pwd'
+alias src='source .bash_profile'
+alias b='cd ..&&pwd'
+alias bs='b&&s'
+alias raw='cd assets/images/game/raw&&s'
+
+#Game Dev aliases
+alias audio='audiosprite -g 0 -o audio -e "ogg,m4a,wav" *.ogg'
+alias audioWAV='audiosprite -g 0 -o audio -e "ogg,m4a,wav" *.wav'
+alias audioBG='audiosprite -g 0 -o bg_audio -e "ogg,m4a,wav" '
+
+alias src='source .bash_profile'
+alias halp='vim phaser/Useful\ commands' 
+
+#adds commits and pushes first parameter as commit message
+function cm() {
+ga&&git commit -m "$1"&&gp
+}
+
+#Eliminates all files that start with a given parameter
+function rWord(){
+for filename in ./*; do mv "./$filename" "./$(echo $filename | sed -e 's/"$1"//g')";  done
+}
