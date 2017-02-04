@@ -1,0 +1,23 @@
+#Univeral use aliases
+alias brc='vim .bash_profile'
+alias l='pwd&&ls -la'
+alias s='ls&&pwd'
+alias ga='git add -A'
+alias gp='git push origin master'
+alias bb='cd ..&&cd ..&&s&&pwd'
+alias bbb='cd ..&&cd ..&&cd ..&&pwd'
+alias src='source .bash_profile'
+alias resize='/opt/ImageMagick/bin/convert'
+alias b='cd ..&&pwd'
+alias bs='b&&s'
+alias raw='cd assets/images/game/raw&&s'
+alias src='source .bash_profile'
+alias work=echo "not currently set"
+alias src='source .bash_profile'
+alias sublime='./~/usr/local/sublime-text-3/sublime_text_3/sublime_text'
+
+#adds commits and pushes first parameter as commit message
+function cm() {
+ga&&git commit -m "$1"&&git pull origin master&&gp
+}
+
