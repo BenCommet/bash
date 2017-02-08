@@ -1,5 +1,5 @@
 #Univeral use aliases
-alias brc='vim .bash_profile'
+alias brc='vim .bashrc'
 alias l='pwd&&ls -la'
 alias s='ls&&pwd'
 alias ga='git add -A'
@@ -15,6 +15,9 @@ alias src='source .bash_profile'
 alias work=echo "not currently set"
 alias src='source .bash_profile'
 alias sublime='./~/usr/local/sublime-text-3/sublime_text_3/sublime_text'
+
+#Environment variables
+JAVA_HOME="/usr/lib/jvm/open-jdk"
 
 #adds commits and pushes first parameter as commit message
 function cm() {
